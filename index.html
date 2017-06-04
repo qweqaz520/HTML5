@@ -1,320 +1,481 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>hello</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/food.css" rel="stylesheet" type="text/css">
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/bootstrap.js"></script>
-
+<title>shop</title>
+<!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> -->
+<link href="css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/shop.css">
+<link rel="stylesheet" href="js/bootstrap.js">
+<link rel="stylesheet" href="js/jquery-1.11.3.min.js">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 </head>
-
 <body>
-<!--头部-->
-<header>
-	<ul class="nav nav-tabs">
-		<li><a href="#">首页</a></li>
-		<li><a href="#">产品介绍</a></li>
-		<li><a href="#">新品上市</a></li>
-		<li><a href="#">资讯动态</a></li>
-		<li><a href="#">关于我们</a></li>
-		<li><a href="#">联系我们</a></li>
-		
-				<div class="btn-group">
-			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				更多<span class="caret"></span>
-			  </button>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<!-- <script src="js/bootstrap.js"></script> -->
+<script src="js/bootstrap-3.3.7.js"></script>
+<div class="header">
+		<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+	<div class="logo"><a href="#"><img src="imges/资源 1.svg" alt=""></a></div>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li><a href="#">品牌 </a></li>
+			<li><a href="#">关键词机会</a></li>
+			<li><a href="#">福利</a></li>
+			<li><a href="#">彩票/彩色</a></li>
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">分类 <span class="caret"></span></a>
 			  <ul class="dropdown-menu">
-				<li><a href="#">文件</a></li>
-				<li><a href="#">编辑</a></li>
-				<li><a href="#">查看</a></li>
+				<li><a href="#">时尚配饰16646</a></li>
+				<li><a href="#">人寿/健康4990</a></li>
+				<li><a href="#">运动/休闲4255 </a></li>
 				<li role="separator" class="divider"></li>
-				<li><a href="#">反馈</a></li>
+				<li><a href="#">产假/育儿1142 </a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">数码/消费电子164  </a></li>
+				<li><a href="#">时尚服装72 </a></li>
+				<li><a href="#">食品69 </a></li>
+				<li><a href="#">化妆品/美容17 </a></li>
+				<li><a href="#">旅游/文化8 </a></li>
+			  </ul>     
+			</li>
+		  </ul>
+		  <form class="navbar-form navbar-left">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="输入商品" >
+
+			</div>
+
+
+			<button type="submit" class="btn btn-default">搜索</button>
+		  </form>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#">注册/登录</a></li>
+			<li class="dropdown">
+			 <span class="glyphicon glyphicon-user" aria-hidden="true">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">帮助 <span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">MY HOME</a></li>
+				<li><a href="#">Jjimhan产品</a></li>
+				<li><a href="#">利息商店</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">购物车</a></li>
+				<li><a href="#">订单确认/曲目</a></li>
+				<li><a href="#">优惠券</a></li>
+			  </ul>
+			</span>
+
+
+
+
+			</li>
+		  </ul>
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+<div class="container">	
+	<div class="hed">	
+		<ul class="nav nav-tabs">
+			<li><a href="#">我的助理</a></li>              
+			<li><a href="#">拉什袋</a></li>
+			<li><a href="#">草袋 </a></li>
+			<li><a href="#">夏日包包</a></li>
+			<li><a href="#">拉什背筐</a></li>
+			<li><a href="#">藤袋</a></li>
+			<li><a href="#">酒椰袋</a></li>
+			<li><a href="#">绒球袋</a></li>
+			<li><a href="#">竹节包</a></li>
+			<li><a href="#">密实袋</a></li>
+			<li><a href="#">水桶包</a></li>
+			<li><a href="#">度假手袋</a></li>
+			<li><a href="#">小笼包</a></li>
+			<div class="box">
+			<div class="dropdown navbar-right">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				更多
+				<span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				<li><a href="#">十字赶回</a></li>
+				<li><a href="#"> 法蒂玛摩洛哥</a></li>
+				<li><a href="#">流苏包</a></li>
+				<li><a href="#">手提包</a></li>
+				<li><a href="#">圆柱桶包</a></li>
+				<li><a href="#">野餐包</a></li>
+				<li><a href="#">笑脸包</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#"> Bokjori回</a></li>     
+				<li><a href="#"> 夜bubaek </a></li>     
+				<li><a href="#"> Mochil rabaek</a></li>     
 			  </ul>
 			</div>
-
-
-	</ul>
-</header>
-
-
-<!--banner-->
-
-  
-  <div id="carousel1" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel1" data-slide-to="1"></li>
-      <li data-target="#carousel1" data-slide-to="2"></li>
-      <li data-target="#carousel1" data-slide-to="3"></li>
-      <li data-target="#carousel1" data-slide-to="4"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="item active"><img src="images/banner.png" alt="First slide image" class="center-block">
-        <div class="carousel-caption">
-          <h3>First slide Heading</h3>
-          <p>First slide Caption</p>
-        </div>
-      </div>
-      <div class="item"><img src="images/banner1.png" alt="Second slide image" class="center-block">
-        <div class="carousel-caption">
-          <h3>Second slide Heading</h3>
-          <p>Second slide Caption</p>
-        </div>
-      </div>
-      <div class="item"><img src="images/banner2.png" alt="Third slide image" class="center-block">
-        <div class="carousel-caption">
-          <h3>Third slide Heading</h3>
-          <p>Third slide Caption</p>
-        </div>
-      </div>
-      
-      <div class="item"><img src="images/banner3.png" alt="Third slide image" class="center-block">
-        <div class="carousel-caption">
-          <h3>Third slide Heading</h3>
-          <p>Third slide Caption</p>
-        </div>
-      </div>
-      
-      <div class="item"><img src="images/banner4.png" alt="Third slide image" class="center-block">
-        <div class="carousel-caption">
-          <h3>Third slide Heading</h3>
-          <p>Third slide Caption</p>
-        </div>
-      </div>
-    </div>
-    <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div>
-
-
-<!--content-->
-
-<div class="row1">
-			<a href="index.html">	<img src="images/logo.png" class="img-rounded" alt=""></a>	
-			<span class="pull-right "><strong><a href="#" >登录</a></strong>
-				<button class="btn " type="submit" value="免费注册">免费注册</button>
-			</span>
-	</div>
-
-<div class="box pull-left">
-	<div class="center">
-		<strong>SEARCH</strong><br>
-		<form>
-			<input type="text" value="输入关键字搜索">
-			<button class="btn-primary">
-				<span class="glyphicon glyphicon-search"></span>
-			</button>
-		</form><br>
-		
-		<strong>CATEGORY</strong><br>
-		<ul class="list-unstyled">
-			<li><a href="#">VIP素材 (467)</a></li>
-			<li><a href="#">C4D资源 (5)</a></li>
-			<li><a href="#">Mockups (65)</a></li>
-			<li><a href="#">PPT模版 (55)</a></li>
-			<li><a href="#">PS动作 (11)</a></li>
-			<li><a href="#">PS笔刷 (12)</a></li>
-			<li><a href="#">Ui Kits (117)</a></li>
-			<li><a href="#">其他 (6)</a></li>
-			<li><a href="#">图层样式 (10)</a></li>
-			<li><a href="#">图标 (33)</a></li>
-			<li><a href="#">平面图形 (102)</a></li>
-			<li><a href="#">影视素材 (31)</a></li>
-			<li><a href="#">教程 (2)</a></li>
-			<li><a href="#">背景纹理 (25)</a></li>
-			<li><a href="#">交互设计 (84)</a></li>
-			<li><a href="#">免费素材 (1,225)</a></li>
-			<li><a href="#">前端开发 (149)</a></li>
-			<li><a href="#">设计工具推荐 (149)</a></li>
-			<li><a href="#">设计教程 (97)</a></li>
-			<li><a href="#">设计欣赏 (253)</a></li>
-			<li><a href="#">设计理论 (219)</a></li>
-			<li><a href="#">设计资讯 (253)</a></li>
+			</div>
 		</ul>
-		<strong>近期热门</strong><br>
-	<p><a href="https://www.sthke.com">Sketch43.1下载</a> (APP UI设计必备的设计工具，带汉化插件) - 4,461 阅读
-		<br>
-		<a href="http://www.sthke.com">Sketch43.1下载</a>(APP UI设计必备的设计工具，带汉化插件) - 1,845 阅读
-	</p>
 	</div>
 </div>
-	
-<div class="box2">
-	<h3 class="h3">交互设计<br>
-		<small>交互设计、UE、用户体验</small>
-	</h3>
-		<div class="row ">
-			<div class="col-md-4">
-				<img src="images/未标题-1-2.jpg"  class="img-responsive" alt="">
-				<p>如何让你的APP交互动画更自然（运动曲线探究与应用）</p>
-				<p class="p1">2017年3月14日
-				 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp;&nbsp;         
-				<small><span class="glyphicon glyphicon-eye-open">1184</span>&nbsp;&nbsp;  
-				<span class="glyphicon glyphicon-envelope">11 </span></small>
-				</p>
-			</div>
-			
-			<div class="col-md-4">
-				<img src="images/dribbblejhdbb20170314.gif"  class="img-responsive" alt="">
-				<p>如何让你的APP交互动画更自然（运动曲线探究与应用）</p>
-				<p class="p1">2017年3月14日 
-				 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp;&nbsp;            
-				<small><span class="glyphicon glyphicon-eye-open">1184</span>&nbsp;&nbsp;  
-				<span class="glyphicon glyphicon-envelope">11 </span></small>
-				</p>
-			</div>
-			
-			<div class="col-md-4">
-				<img src="images/gifbanner.gif" class="img-responsive" alt="">
-				<p>如何让你的APP交互动画更自然（运动曲线探究与应用）</p>
-				<p class="p1">2017年3月14日 
-				 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp;&nbsp;           
-				<small><span class="glyphicon glyphicon-eye-open">1184</span>&nbsp;&nbsp;  
-				<span class="glyphicon glyphicon-envelope">11 </span></small>
-				</p>
-			</div>
-			
-			<div class="col-md-4">
-				<img src="images/bmw-banner.gif" class="img-responsive" alt="">
-				<p>如何让你的APP交互动画更自然（运动曲线探究与应用）</p>
-				<p class="p1">2017年3月14日 
-				 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp;&nbsp;            
-				<small><span class="glyphicon glyphicon-eye-open">1184</span>&nbsp;&nbsp;  
-				<span class="glyphicon glyphicon-envelope">11 </span></small>
-				</p>
-			</div>
-			
-			
-			<div class="col-md-4">
-				<a href="#"><img src="images/appdonghuajq.gif" class="img-responsive" alt=""></a>
-				<p>如何让你的APP交互动画更自然（运动曲线探究与应用）</p>
-				<p class="p1">2017年3月14日
-					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp;&nbsp; 
-				<small><span class="glyphicon glyphicon-eye-open">1184</span>&nbsp;&nbsp;  
-				<span class="glyphicon glyphicon-envelope">11 </span></small>
-				</p>
-			</div>
-			
-			
-			<div class="col-md-4">
-				<a href=""><img src="images/hotelBrandB0429.jpg" class="img-responsive" alt=""></a>
-				<p>如何让你的APP交互动画更自然（运动曲线探究与应用）</p>
-				<p class="p1">2017年3月14日 
-				 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-				&nbsp;&nbsp;&nbsp;           
-				<small><span class="glyphicon glyphicon-eye-open">1184</span>&nbsp;&nbsp;
-				<span class="glyphicon glyphicon-envelope">11 </span></small>
-				</p>
-			</div>
-			
+
+<!--旋转木马-->
+<div id="carousel1" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel1" data-slide-to="1"></li>
+	    <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active"><img src="imges/4.png" alt="First slide image" class="center-block">
+	      <div class="carousel-caption">
+	        <h3 class="text-uppercase">First slide Heading</h3>
+	        <p>First slide Caption</p>
+          </div>
+        </div>
+	    <div class="item"><img src="imges/3.png" alt="Second slide image" class="center-block">
+	      <div class="carousel-caption">
+	        <h3 class="text-uppercase">Second slide Heading</h3>
+	        <p>Second slide Caption</p>
+          </div>
+        </div>
+	    <div class="item"><img src="imges/2.png" alt="Third slide image" class="center-block">
+	      <div class="carousel-caption">
+	        <h3 class="text-uppercase">Third slide Heading</h3>
+	        <p>Third slide Caption</p>
+          </div>
+        </div>
+        
+        <div class="item"><img src="imges/1.png" alt="Third slide image" class="center-block">
+	      <div class="carousel-caption">
+	        <h3 class="text-uppercase">Third slide Heading</h3>
+	        <p>Third slide Caption</p>
+          </div>
+        </div>
+      </div>
+	  <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div>
+	  
+	<!--缩列图 --> 
+  <div class="container">
+  	
+  	<div class="row">
+  		<div class="col-md-3">
+  			<a href="#" class="thumbnail">
+  				<img src="imges/11.png" alt="">
+  			</a>
+  		</div>
+  		
+  		<div class="col-md-3">
+  			<a href="#" class="thumbnail">
+  				<img src="imges/12.png" alt="">
+  			</a>
+  		</div>
+  		
+  		<div class="col-md-3">
+  			<a href="#" class="thumbnail">
+  				<img src="imges/13.png" alt="">
+  			</a>
+  		</div>
+  		
+  		<div class="col-md-3">
+  			<a href="#" class="thumbnail">
+  				<img src="imges/14.png" alt="">
+  			</a>
+  		</div>
+  		
+  		<div class="col-md-3">
+  			<a href="#" class="thumbnail">
+  				<img src="imges/15.png" alt="">
+  			</a>
+  		</div>
+  		
+  		<div class="col-md-3">
+  			<a href="#" class="thumbnail">
+  				<img src="imges/16.png" alt="">
+  			</a>
+  		</div>
+  		
+  		<div class="col-md-3">
+  			<a href="#" class="thumbnail">
+  				<img src="imges/17.png" alt="">
+  			</a>
+  		</div>
+  		
+  		<div class="col-md-3">
+  			<a href="#" class="thumbnail">
+  				<img src="imges/18.png" alt="">
+  			</a>
+  		</div>
+  	</div>
+  	
+  	
+  	
+  	<div class="q"><h1 class="text-center"><span class="glyphicon glyphicon-map-marker text-lowercase"> 你的专属活动</span> </h1>
+  	</div>
+  	
+  	
+  	
+  	<div class="row">
+  		<div class="col-md-3 ">
+			<a href="#" class="thumbnail">
+				<img src="imges/25.jpg" alt="">
+			</a>
+  		</div>
+  		<div class="col-md-3">
+			<a href="#" class="thumbnail">
+				<img src="imges/24.jpg" alt="">
+			</a>
+  		</div>
+  		
+  		<div class="col-md-3">
+			<a href="#" class="thumbnail">
+				<img src="imges/23.jpg" alt="">
+			</a>
+  		</div>
+  		
+  		<div class="col-md-3">
+			<a href="#" class="thumbnail">
+				<img src="imges/22.jpg" alt="">
+			</a>
+  		</div>
+  		
+  		<div class="col-md-3">
+			<a href="#" class="thumbnail">
+				<img src="imges/21.jpg" alt="">
+			</a>
+  		</div>
+  		
+  		<div class="col-md-3">
+			<a href="#" class="thumbnail">
+				<img src="imges/12的副本.png" alt="">
+			</a>
+  		</div>
+  		
+  		<div class="col-md-3">
+			<a href="#" class="thumbnail">
+				<img src="imges/14的副本.png" alt="">
+			</a>
+  		</div>
+  		
+  		
+  		<div class="col-md-3">
+			<a href="#" class="thumbnail">
+				<img src="imges/13的副本.png" alt="">
+			</a>
+  		</div>
+  	</div>
+  	
+  	<!--进度条-->
+  	
+  			<div class="progress">
+		  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+			<span class="sr-only">45% Complete</span>
+		  </div>
 		</div>
 		
+		<!--详情 购买-->
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="imges/18.png" alt="...">
+      <div class="caption">
+        <h3> 碧玉尊缅甸冰种飘花翡翠手镯玉镯</h3>
+        <p><strong>产品参数</strong>：
+上市时间: 2014年秋冬季优化处理方式: 无处理是否商场同款: 否种地类型: 冰种鉴定标识: 国内鉴定鉴定类别: 中国地质大学珠宝检测中心认证标识: CAL、CMA和CNAS/CNAL销售渠道类型: 纯电商(只在线上销售)颜色分类: 53圈口 54圈口 57圈口 58圈口 60圈口 62圈口 52圈口 55圈口 56圈口 59圈口图案/形状: 其他售后服务: 复检后再付款镶嵌材质: 未镶嵌品牌: 碧玉尊货号: FCSZ-257价格区间: 5001-10000元款式: 手镯</p>
+        <p><a href="#" class="btn btn-primary" role="button">购买</a> <a href="#" class="btn btn-default" role="button">详情</a></p>
+      </div>
+    </div>
+  </div>
+  
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="imges/17.png" alt="...">
+      <div class="caption">
+        <h3> 碧玉尊缅甸冰种飘花翡翠手镯玉镯</h3>
+        <p><strong>产品参数</strong>：
+上市时间: 2014年秋冬季优化处理方式: 无处理是否商场同款: 否种地类型: 冰种鉴定标识: 国内鉴定鉴定类别: 中国地质大学珠宝检测中心认证标识: CAL、CMA和CNAS/CNAL销售渠道类型: 纯电商(只在线上销售)颜色分类: 53圈口 54圈口 57圈口 58圈口 60圈口 62圈口 52圈口 55圈口 56圈口 59圈口图案/形状: 其他售后服务: 复检后再付款镶嵌材质: 未镶嵌品牌: 碧玉尊货号: FCSZ-257价格区间: 5001-10000元款式: 手镯</p>
+        <p><a href="#" class="btn btn-primary" role="button">购买</a> <a href="#" class="btn btn-default" role="button">详情</a></p>
+      </div>
+    </div>
+  </div>
+  
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="imges/16.png" alt="...">
+      <div class="caption">
+        <h3> 碧玉尊缅甸冰种飘花翡翠手镯玉镯</h3>
+        <p><strong>产品参数</strong>：
+上市时间: 2014年秋冬季优化处理方式: 无处理是否商场同款: 否种地类型: 冰种鉴定标识: 国内鉴定鉴定类别: 中国地质大学珠宝检测中心认证标识: CAL、CMA和CNAS/CNAL销售渠道类型: 纯电商(只在线上销售)颜色分类: 53圈口 54圈口 57圈口 58圈口 60圈口 62圈口 52圈口 55圈口 56圈口 59圈口图案/形状: 其他售后服务: 复检后再付款镶嵌材质: 未镶嵌品牌: 碧玉尊货号: FCSZ-257价格区间: 5001-10000元款式: 手镯</p>
+        <p><a href="#" class="btn btn-primary" role="button">购买</a> <a href="#" class="btn btn-default" role="button">详情</a></p>
+      </div>
+    </div>
+  </div>
+  
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="imges/15.png" alt="...">
+      <div class="caption">
+        <h3> 碧玉尊缅甸冰种飘花翡翠手镯玉镯</h3>
+        <p><strong>产品参数</strong>：
+上市时间: 2014年秋冬季优化处理方式: 无处理是否商场同款: 否种地类型: 冰种鉴定标识: 国内鉴定鉴定类别: 中国地质大学珠宝检测中心认证标识: CAL、CMA和CNAS/CNAL销售渠道类型: 纯电商(只在线上销售)颜色分类: 53圈口 54圈口 57圈口 58圈口 60圈口 62圈口 52圈口 55圈口 56圈口 59圈口图案/形状: 其他售后服务: 复检后再付款镶嵌材质: 未镶嵌品牌: 碧玉尊货号: FCSZ-257价格区间: 5001-10000元款式: 手镯</p>
+        <p><a href="#" class="btn btn-primary" role="button">购买</a> <a href="#" class="btn btn-default" role="button">详情</a></p>
+      </div>
+    </div>
+  </div>
+  
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="imges/14.png" alt="...">
+      <div class="caption">
+        <h3> 碧玉尊缅甸冰种飘花翡翠手镯玉镯</h3>
+        <p><strong>产品参数</strong>：
+上市时间: 2014年秋冬季优化处理方式: 无处理是否商场同款: 否种地类型: 冰种鉴定标识: 国内鉴定鉴定类别: 中国地质大学珠宝检测中心认证标识: CAL、CMA和CNAS/CNAL销售渠道类型: 纯电商(只在线上销售)颜色分类: 53圈口 54圈口 57圈口 58圈口 60圈口 62圈口 52圈口 55圈口 56圈口 59圈口图案/形状: 其他售后服务: 复检后再付款镶嵌材质: 未镶嵌品牌: 碧玉尊货号: FCSZ-257价格区间: 5001-10000元款式: 手镯</p>
+        <p><a href="#" class="btn btn-primary" role="button">购买</a> <a href="#" class="btn btn-default" role="button">详情</a></p>
+      </div>
+    </div>
+  </div>
+  
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="imges/12.png" alt="...">
+      <div class="caption">
+        <h3> 碧玉尊缅甸冰种飘花翡翠手镯玉镯</h3>
+        <p><strong>产品参数</strong>：
+上市时间: 2014年秋冬季优化处理方式: 无处理是否商场同款: 否种地类型: 冰种鉴定标识: 国内鉴定鉴定类别: 中国地质大学珠宝检测中心认证标识: CAL、CMA和CNAS/CNAL销售渠道类型: 纯电商(只在线上销售)颜色分类: 53圈口 54圈口 57圈口 58圈口 60圈口 62圈口 52圈口 55圈口 56圈口 59圈口图案/形状: 其他售后服务: 复检后再付款镶嵌材质: 未镶嵌品牌: 碧玉尊货号: FCSZ-257价格区间: 5001-10000元款式: 手镯</p>
+        <p><a href="#" class="btn btn-primary" role="button">购买</a> <a href="#" class="btn btn-default" role="button">详情</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+		
+	<div class="panel panel-primary" >
+  <!-- Default panel contents -->
+  <div class="panel-heading">商品具体规格</div>	
+	<table class="table">
+   <tr>
+    <th>海外购</th>
+    <th>潮流时尚馆</th>
+    <th>电器数码馆</th>
+    <th>图书音像馆</th>
+    <th>居家生活馆</th>
+    <th>母婴玩具馆</th>
+    </tr>
+    
+    <tr>
+    	<td>音响电脑</td>
+    	<td>通讯</td>   	
+		<td>摄影摄像电视</td>
+    	<td>音响电脑</td>
+    	<td>用品网络</td>
+	  <td>DIY硬件店</td>
+    	
+    </tr>
+    
+    
+     <tr>
+    	<td>电子数码</td>
+    	<td>通讯</td>   	
+		<td>摄影摄像电视</td>
+    	<td>音响电脑</td>
+    	<td>用品网络</td>
+	  <td>DIY硬件店</td>
+    	
+    </tr>
+    
+     <tr>
+    	<td>电子数码</td>
+    	<td>通讯</td>   	
+		<td>摄影摄像电视</td>
+    	<td>音响电脑</td>
+    	<td>用品网络</td>
+	  <td>DIY硬件店</td>
+    	
+    </tr>
+  </table>
+	
+</div>	
+		
+
+
+
+<!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="640" height="360" src="https://www.youtube.com/embed/uZrjvwPeKIM" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="embed-responsive embed-responsive-16by9">
+<iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DXdd3gw5QVjt9" width="80" height="40" frameborder="0" allowtransparency="true"></iframe>
 </div>
 
-<footer>
-	<div class="row2">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="images/hotelBrandB0429.jpg" alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p></p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
+		
+<div class="row">
+	<div class="col-md-3">
+	
+	<h3><span class="glyphicon glyphicon-eye-open">消费者保障</span></h3><br/>
+	<p>保障范围 退货退款流程 服务中心 更多特色服务</p>
+		
+	</div>
+	
+	<div class="col-md-3">
+	
+	<h3><span class="glyphicon glyphicon-question-sign">新手上路</span></h3><br/>
+	<p>新手专区 消费警示 交易安全 24小时在线帮助 免费开店</p>
+		
+	</div>
+	
+	<div class="col-md-3">
+	
+	<h3><span class="glyphicon glyphicon-usd">付款方式</span></h3><br/>
+	<p>快捷支付 信用卡 余额宝 蚂蚁花呗 货到付款</p>
+		
+	</div>
+	
+	<div class="col-md-3">
+	
+	<h3><span class="glyphicon glyphicon-credit-card">淘宝特色</span></h3><br/>
+	<p>手机淘宝 旺旺/旺信 大众评审</p>
+		
+	</div>
   </div>
   
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="images/未标题-1-1.jpg" alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p></p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="images/jhsj5zhong.jpg" alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p></p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="images/gifbanner.gif" alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p></p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="images/form.jpg" alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p></p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="images/appdonghuajq.gif" alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p></p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-</footer>
 
-<!--底部-->
-<div class="foot">
+
+
+<div class="footer">
+
 	<ul class="nav nav-tabs">
-		<li><a href="#">首页</a></li>
-		<li><a href="#">产品介绍</a></li>
-		<li><a href="#">新品上市</a></li>
-		<li><a href="#">关于我们</a></li>
-		<li><a href="#">联系我们</a></li>
-		<div class="imgs pull-right">	
-		<a href=" "><img src="images/flaticon1488770661-svg.svg"  class="img-roundede pull-right" alt=""></a>
-		<a href="#"><img src="images/flaticon1488770764-svg.svg"  class="img-roundede pull-right" alt=""></a><a href="#"><img src="images/flaticon1488770660-svg.svg"  class="img-roundede pull-right" alt=""></a>
-		<a href="#"><img src="images/flaticon1488770922-svg.svg"  class="img-roundede pull-right" alt=""></a>
-		</div>
+		<li><a href="">关于我们</a></li>
+		<li><a href="">合作伙伴</a></li>
+		<li><a href="">营销中心</a></li>
+		<li><a href="">知识产权</a></li>
+		<li><a href="">廉正举报</a></li>
+		<li><a href="">联系客服</a></li>
+		<li><a href="">开放平台</a></li>
+		<li><a href="">诚征英才</a></li>
+		<li><a href="">联系我们</a></li>
+		<li><a href="">网站地图</a></li>
+		<li><a href="">法律声明</a></li>
 	</ul>
 	
+	</div>
+	<p class="text-center">网络文化经营许可证：文网文[2010]040号|增值电信业务经营许可证：浙B2-20080224-1|信息网络传播视听节目许可证：1109364号</p>
 </div>
+  </div>
+ 
 </body>
 </html>
